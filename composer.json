@@ -1,5 +1,5 @@
 {
-    "name": "bookingtime/appointment",
+    "name": "bookingtime/app-joomla-appointment",
     "type": "project",
     "description": "Conveniently integrate bookingtime's online appointment booking into your website.",
     "keywords": [
@@ -38,7 +38,7 @@
         "issues": "https://www.bookingtime.com/"
     },
     "config": {
-        "vendor-dir": "./vendor"
+        "vendor-dir": "./admin/vendor"
     },
     "require": {
         "php": "^8.1",
