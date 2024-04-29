@@ -1,0 +1,35 @@
+<?php
+
+namespace Bookingtime\Component\Appointment\Administrator\Controller;
+
+defined('_JEXEC') or die;
+
+use Joomla\CMS\MVC\Controller\BaseController;
+
+/**
+ * @package     COM_BT_APPOINTMENT
+ * @subpackage  com_appointment
+ *
+ * @copyright   Copyright (c) 2014 bookingtime GmbH. All Rights Reserved.
+ * @license     MIT; see LICENSE.txt
+ */
+
+/**
+ * Default Controller of Appointment component
+ *
+ * @package     COM_BT_APPOINTMENT
+ * @subpackage  com_appointment
+ */
+class DisplayController extends BaseController {
+    /**
+     * The default view for the display method.
+     *
+     * @var string
+     */
+    protected $default_view = 'step1';
+
+    public function display($cachable = false, $urlparams = array()) {
+        return parent::display($cachable, $urlparams);
+    }
+
+}

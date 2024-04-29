@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.8" client="site" method="upgrade">
+    <name>MOD_APPOINTMENT</name>
+    <creationDate>April 2023</creationDate>
+    <author>bookingtime GmbH</author>
+    <authorEmail>info@bookingtime.com</authorEmail>
+    <authorUrl>https://bookingtime.com</authorUrl>
+    <copyright>bookingtime GmbH</copyright>
+    <license>MIT; see LICENSE.txt</license>
+    <version>1.0</version>
+    <description>MOD_APPOINTMENT_XML_DESCRIPTION</description>
+    <namespace>Appointment\Module\Appointment</namespace>
+    <scriptfile>script.php</scriptfile>
+    <files>
+        <filename module="mod_appointment">mod_appointment.php</filename>
+        <folder>tmpl</folder>
+        <folder>Helper</folder>
+        <folder>language</folder>
+        <filename>mod_appointment.xml</filename>
+    </files>
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.mod_appointment.ini</language>
+        <language tag="en-GB">en-GB/en-GB.mod_appointment.sys.ini</language>
+        <language tag="de-DE">de-DE/de-DE.mod_appointment.ini</language>
+        <language tag="de-DE">de-DE/de-DE.mod_appointment.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                    name="appointment"
+                    type="sql"
+                    default="1"
+                    label="Select an appointment url."
+                    query="SELECT id,url,title FROM #__bookingtime_appointment"
+                    key_field="id"
+                    value_field="title"
+                    />
+            </fieldset>
+        </fields>
+    </config>
+</extension>
