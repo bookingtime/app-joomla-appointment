@@ -59,6 +59,7 @@ class AppointmentHelper
 		} else {
 			$this->organizationTemplateLanguageSuffix = 'EN';
 		}
+
    }
 
    /**

@@ -4,9 +4,9 @@
  * @package    MOD_APPOINTMENT
  *
  * @author     bookingtime GmbH <support@bookingtime.com>
- * @copyright  bookingtime GmbH
+ * @copyright  2014 bookingtime GmbH
  * @license    MIT; see LICENSE.txt
- * @link       www.bookingtime.com
+ * @link       https://www.bookingtime.com
  */
 // No direct access to this file
 defined('_JEXEC') or die;

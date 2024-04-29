@@ -7,11 +7,11 @@ use Joomla\CMS\HTML\HTMLHelper;
 use Joomla\CMS\Document\Factory;
 
 /**
- * @package     COM_BT_APPOINTMENT
+ * @package     MOD_APPOINTMENT
  * @subpackage  com_appointment
  *
- * @copyright   Copyright (c) 2014 bookingtime GmbH. All Rights Reserved.
- * @license     MIT; see LICENSE.txt
+ * @copyright   Copyright (C) 2014 bookingtime GmbH. All rights reserved.
+ * @license     MIT; see LICENSE
  */
 
  // No direct access to this file
