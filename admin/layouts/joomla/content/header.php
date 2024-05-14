@@ -1,5 +1,5 @@
 <?php
-defined('JPATH_BASE') or die;
+defined('_JEXEC') or die('Restricted Access');
 
 use Joomla\CMS\Factory;
 use Joomla\CMS\Language\Text;

@@ -4,7 +4,7 @@
 
     <name>Appointment</name>
     <!-- The following elements are optional and free of formatting constraints -->
-    <creationDate>2023-04-01</creationDate>
+    <creationDate>2024-04-00</creationDate>
     <!-- Dummy author, feel free to replace anywhere you see it-->
     <author>bookingtime GmbH</author>
     <authorUrl>https://bookingtime.com</authorUrl>

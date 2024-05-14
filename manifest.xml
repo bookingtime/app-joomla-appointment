@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<updates>
+    <update>
+        <name>Appointment</name>
+        <description><![CDATA[Kompatibel mit Joomla4+5]]></description>
+        <element>appointment</element>
+        <type>component</type>
+        <version>5.0.1</version>
+        <infourl title="Appointment">https://github.com/bookingtime/app-joomla-appointment</infourl>
+        <downloads>
+            <downloadurl type="full" format="zip">https://github.com/bookingtime/app-joomla-appointment/archive/refs/tags/v5.0.1.zip</downloadurl>
+        </downloads>
+        <tags>
+            <tag>stable</tag>
+        </tags>
+        <maintainer>bookingtime</maintainer>
+        <maintainerurl>https://github.com/bookingtime</maintainerurl>
+        <targetplatform name="joomla" version="4.0+" />
+        <targetplatform name="joomla" version="5.0+" />
+        <php_minimum>7.2</php_minimum>
+    </update>
+</updates>

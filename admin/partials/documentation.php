@@ -1,4 +1,5 @@
 <?php
+defined('_JEXEC') or die('Restricted Access');
 
 use Joomla\CMS\Language\Text;
 use Joomla\CMS\Uri\Uri;
@@ -10,9 +11,6 @@ use Joomla\CMS\Uri\Uri;
  * @copyright   Copyright (C) 2014 bookingtime GmbH. All rights reserved.
  * @license     MIT; see LICENSE
  */
-
- // No direct access to this file
-defined('_JEXEC') or die('Restricted Access');
 ?>
 
 <div id="documentation" class="documentation border border-3 rounded-3 p-3 m-3">
