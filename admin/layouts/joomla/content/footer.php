@@ -1,5 +1,6 @@
 <?php
-defined('JPATH_BASE') or die;
+defined('_JEXEC') or die('Restricted Access');
+
 $document = JFactory::getDocument();
 ?>
 </div>

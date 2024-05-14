@@ -1,5 +1,7 @@
 <?php
 namespace Bookingtime\Component\Appointment\Administrator\Helper;
+defined('_JEXEC') or die('Restricted Access');
+
 
 require_once(__DIR__ . '/../../vendor/autoload.php');
 

@@ -1,8 +1,6 @@
 <?php
-
 namespace Bookingtime\Component\Appointment\Administrator\Controller;
-
-defined('_JEXEC') or die;
+defined('_JEXEC') or die('Restricted Access');
 
 use Joomla\CMS\MVC\Controller\BaseController;
 
