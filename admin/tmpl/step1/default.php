@@ -1,9 +1,4 @@
 <?php
-
-use Joomla\CMS\Language\Text;
-use Joomla\CMS\Router\Route;
-use Joomla\CMS\Layout\FileLayout;
-
 /**
  * @package     MOD_APPOINTMENT
  * @subpackage  com_appointment
@@ -11,6 +6,10 @@ use Joomla\CMS\Layout\FileLayout;
  * @copyright   Copyright (C) 2014 bookingtime GmbH. All rights reserved.
  * @license     MIT; see LICENSE
  */
+
+use Joomla\CMS\Language\Text;
+use Joomla\CMS\Router\Route;
+use Joomla\CMS\Layout\FileLayout;
 
  // No direct access to this file
 defined('_JEXEC') or die('Restricted Access');

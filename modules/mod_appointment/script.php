@@ -1,13 +1,12 @@
 <?php
-
 /**
- * @package    MOD_APPOINTMENT
+ * @package     MOD_APPOINTMENT
+ * @subpackage  com_appointment
  *
- * @author     bookingtime GmbH <support@bookingtime.com>
- * @copyright  2014 bookingtime GmbH
- * @license    MIT; see LICENSE.txt
- * @link       https://www.bookingtime.com
+ * @copyright   Copyright (C) 2014 bookingtime GmbH. All rights reserved.
+ * @license     MIT; see LICENSE
  */
+
 // No direct access to this file
 defined('_JEXEC') or die;
 

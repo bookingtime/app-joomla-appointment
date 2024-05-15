@@ -1,9 +1,10 @@
 <?php
 /**
- * @package    COM_BT_APPOINTMENT
- * @author     bookingtime GmbH <support@bookingtime.com>
- * @copyright  Copyright (c) 2014 bookingtime GmbH. All Rights Reserved.
- * @license    MIT; see LICENSE.txt
+ * @package     MOD_APPOINTMENT
+ * @subpackage  com_appointment
+ *
+ * @copyright   Copyright (C) 2014 bookingtime GmbH. All rights reserved.
+ * @license     MIT; see LICENSE
  */
 
 defined( '_JEXEC' ) or die();
