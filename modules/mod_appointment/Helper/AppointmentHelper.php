@@ -1,10 +1,10 @@
 <?php
 /**
- * @package     Joomla.Site
- * @subpackage  mod_breadcrumbs
+ * @package     MOD_APPOINTMENT
+ * @subpackage  com_appointment
  *
- * @copyright   Copyright (C) 2005 - 2018 Open Source Matters, Inc. All rights reserved.
- * @license     MIT; see LICENSE.txt
+ * @copyright   Copyright (C) 2014 bookingtime GmbH. All rights reserved.
+ * @license     MIT; see LICENSE
  */
 
 namespace Appointment\Module\Appointment\Site\Helper;
