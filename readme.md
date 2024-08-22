@@ -1,7 +1,7 @@
-# module-joomla-appointment
+# app-joomla-appointment
 Joomla extension appointment, booking module wrapper for CMS Joomla with included setup process.
 
-<img src="https://github.com/bookingtime/module-joomla-appointment/blob/master/aws/logo_joomla.png" alt="logo joomla" width="200" />
+<img src="https://github.com/bookingtime/app-joomla-appointment/blob/master/aws/logo_joomla.png" alt="logo joomla" width="200" />
 
 
 
@@ -11,7 +11,7 @@ Joomla extension appointment, booking module wrapper for CMS Joomla with include
 
 
 ## Installation
-1. Download the latest version of bookingtimeAppointmentComponent from [GitHub](https://github.com/bookingtime/module-joomla-appointment).
+1. Download the latest version of bookingtimeAppointmentComponent from [GitHub](https://github.com/bookingtime/app-joomla-appointment).
 2. Extract the downloaded ZIP archive.
 3. Open the Joomla Administrator Dashboard.
 4. Navigate to `Extensions` > `Manage` > `Install`.
@@ -55,9 +55,9 @@ If bookingtimeAppointmentComponent is not displaying correctly, you can perform 
 ## Composer
 Another way to install the extension is through Composer.
 ```bash
-composer require bookingtime/module-joomla-appointment
+composer require bookingtime/app-joomla-appointment
 ```
-see: https://packagist.org/packages/bookingtime/module-joomla-appointment
+see: https://packagist.org/packages/bookingtime/app-joomla-appointment
 
 
 
@@ -82,4 +82,4 @@ Copyright 2014 bookingtime GmbH. All Rights Reserved.
 
 Made with :blue_heart: by © bookingtime
 
-<img src="https://github.com/bookingtime/module-joomla-appointment/blob/master/aws/logo_bookingtime.png" alt="logo" width="30" height="44" />
+<img src="https://github.com/bookingtime/app-joomla-appointment/blob/master/aws/logo_bookingtime.png" alt="logo" width="30" height="44" />
