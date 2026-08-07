@@ -17,6 +17,6 @@
         <maintainerurl>https://github.com/bookingtime</maintainerurl>
         <targetplatform name="joomla" version="4.0+" />
         <targetplatform name="joomla" version="5.0+" />
-        <php_minimum>7.2</php_minimum>
+        <php_minimum>8.1</php_minimum>
     </update>
 </updates>
