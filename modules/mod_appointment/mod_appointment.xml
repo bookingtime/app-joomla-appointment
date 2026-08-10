@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="module" version="3.8" client="site" method="upgrade">
     <name>MOD_APPOINTMENT</name>
-    <creationDate>April 2023</creationDate>
+    <creationDate>2026-08-10</creationDate>
     <author>bookingtime GmbH</author>
     <authorEmail>info@bookingtime.com</authorEmail>
     <authorUrl>https://bookingtime.com</authorUrl>
     <copyright>bookingtime GmbH</copyright>
     <license>MIT; see LICENSE.txt</license>
-    <version>1.0</version>
+    <version>5.0.4</version>
     <description>MOD_APPOINTMENT_XML_DESCRIPTION</description>
     <namespace>Appointment\Module\Appointment</namespace>
     <scriptfile>script.php</scriptfile>

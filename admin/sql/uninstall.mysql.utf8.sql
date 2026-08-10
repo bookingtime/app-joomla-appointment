@@ -1,1 +1,5 @@
-DROP TABLE IF EXISTS `#__bookingtime_appointment`;
+-- Seit 5.0.4 bleibt die Tabelle `#__bookingtime_appointment` beim Deinstallieren
+-- absichtlich erhalten: Deinstallieren + Neuinstallieren ist ein ueblicher
+-- Reparaturversuch und soll die angelegten Buchungs-URLs nicht vernichten.
+-- Die Installation nutzt CREATE TABLE IF NOT EXISTS, vorhandene Daten werden
+-- bei einer Neuinstallation wiederverwendet.

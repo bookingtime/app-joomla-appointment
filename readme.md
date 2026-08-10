@@ -6,7 +6,7 @@ Joomla extension appointment, booking module wrapper for CMS Joomla with include
 
 
 ## Requirements
-- Joomla version 4+5: https://manual.joomla.org/docs/next/get-started/technical-requirements/
+- Joomla version 4+5+6: https://manual.joomla.org/docs/next/get-started/technical-requirements/
 
 
 

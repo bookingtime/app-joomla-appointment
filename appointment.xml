@@ -4,14 +4,14 @@
 
     <name>Appointment</name>
     <!-- The following elements are optional and free of formatting constraints -->
-    <creationDate>2024-04-00</creationDate>
+    <creationDate>2026-08-10</creationDate>
     <!-- Dummy author, feel free to replace anywhere you see it-->
     <author>bookingtime GmbH</author>
     <authorUrl>https://bookingtime.com</authorUrl>
     <copyright>bookingtime GmbH</copyright>
     <license>MIT</license>
     <!--  The version string is recorded in the components table -->
-    <version>5.0.3</version>
+    <version>5.0.4</version>
     <!-- The description is optional and defaults to the name -->
     <description>Conveniently integrate bookingtime's online appointment booking into your joomla website.</description>
 
@@ -69,4 +69,7 @@
         </files>
         <module module="mod_appointment" client="site" />
 	</modules>
+    <updateservers>
+        <server type="extension" priority="1" name="bookingtime appointment">https://raw.githubusercontent.com/bookingtime/app-joomla-appointment/master/manifest.xml</server>
+    </updateservers>
 </extension>
