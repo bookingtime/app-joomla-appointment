@@ -7,6 +7,7 @@ defined('_JEXEC') or die;
 use Joomla\CMS\MVC\View\HtmlView as BaseHtmlView;
 use Joomla\CMS\Factory;
 use Joomla\CMS\Language\Text;
+use Joomla\CMS\Uri\Uri;
 use Bookingtime\Component\Appointment\Administrator\Helper\AppointmentHelper;
 
 /**
@@ -118,7 +119,7 @@ class HtmlView extends BaseHtmlView {
 
                 //redirect
                 $app = Factory::getApplication();
-                $app->redirect(\JURI::root() . 'administrator/index.php?option=com_appointment&view=step1');
+                $app->redirect(Uri::root() . 'administrator/index.php?option=com_appointment&view=step1');
                 $app->close();
             }
 
@@ -140,7 +141,7 @@ class HtmlView extends BaseHtmlView {
 
                 //redirect
                 $app = Factory::getApplication();
-                $app->redirect(\JURI::root() . 'administrator/index.php?option=com_appointment&view=step1');
+                $app->redirect(Uri::root() . 'administrator/index.php?option=com_appointment&view=step1');
                 $app->close();
             }
 
@@ -160,7 +161,7 @@ class HtmlView extends BaseHtmlView {
 
                 //redirect
                 $app = Factory::getApplication();
-                $app->redirect(\JURI::root() . 'administrator/index.php?option=com_appointment&view=step3');
+                $app->redirect(Uri::root() . 'administrator/index.php?option=com_appointment&view=step3');
                 $app->close();
 
             } else {

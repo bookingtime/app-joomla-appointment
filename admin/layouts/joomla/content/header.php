@@ -3,9 +3,10 @@ defined('_JEXEC') or die('Restricted Access');
 
 use Joomla\CMS\Factory;
 use Joomla\CMS\Language\Text;
+use Joomla\CMS\Uri\Uri;
 
-$document = JFactory::getDocument();
-$assetsUrl  = JURI::root() . '/administrator/components/com_appointment/assets/';
+$document = Factory::getApplication()->getDocument();
+$assetsUrl  = Uri::root() . '/administrator/components/com_appointment/assets/';
 $document->addStyleSheet($assetsUrl . 'bootstrap/css/bootstrap.min.css');
 $document->addStyleSheet($assetsUrl . 'css/bootstrap-icons.css');
 $document->addStyleSheet($assetsUrl . 'css/lightbox.min.css');
@@ -23,7 +24,7 @@ $document->addScript($assetsUrl . 'js/com_appointment.js');
             <div class="col-8 navigation">
               <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="<?php echo JURI::root(); ?>administrator/index.php?option=com_appointment"><img class="image-embed-item" src="<?php echo JURI::root(); ?>administrator/components/com_appointment/assets/img/logo_appointment.png" alt="" width="206" height="36"></a>
+                  <a class="navbar-brand" href="<?php echo Uri::root(); ?>administrator/index.php?option=com_appointment"><img class="image-embed-item" src="<?php echo Uri::root(); ?>administrator/components/com_appointment/assets/img/logo_appointment.png" alt="" width="206" height="36"></a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>

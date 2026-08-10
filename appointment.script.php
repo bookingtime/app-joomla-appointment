@@ -9,9 +9,8 @@
 defined( '_JEXEC' ) or die();
 
 use Joomla\CMS\Factory;
-use Joomla\CMS\Filesystem\Folder;
-use Joomla\CMS\Filesystem\File;
 use Joomla\CMS\Installer\Installer;
+use Joomla\Database\DatabaseInterface;
 use Joomla\CMS\Installer\InstallerScript;
 use Joomla\CMS\Installer\InstallerAdapter;
 use Joomla\CMS\Language\Text;
@@ -148,7 +147,7 @@ class Com_AppointmentInstallerScript extends InstallerScript {
 				foreach ( $modules->children() as $module ) {
 					$moduleName = (string) $module['module'];
 					$path       = $installation_folder . '/modules/' . $moduleName;
-					$installer  = new Installer;
+					$installer  = $this->createInstaller();
 
 					if ( ! $this->isAlreadyInstalled( 'module', $moduleName ) )	{
 						$result = $installer->install( $path );
@@ -199,7 +198,7 @@ class Com_AppointmentInstallerScript extends InstallerScript {
 
 		if ( ! empty( $modules ) ) {
 			if ( count( $modules->children() ) ) {
-				$db    = Factory::getDbo();
+				$db    = $this->getDatabase();
 				$query = $db->getQuery( true );
 
 				foreach ( $modules->children() as $module ) {
@@ -218,7 +217,7 @@ class Com_AppointmentInstallerScript extends InstallerScript {
 					$extension = $db->loadResult();
 
 					if ( ! empty( $extension ) ) {
-						$installer = new Installer;
+						$installer = $this->createInstaller();
 						$result    = $installer->uninstall( 'module', $extension );
 
 						if ( $result ) {
@@ -253,9 +252,38 @@ class Com_AppointmentInstallerScript extends InstallerScript {
 	 * @since   2.0.0
 	 */
 	private function existsTable( $table_name ) {
-		$db = Factory::getDbo();
+		$db = $this->getDatabase();
 		$table_name = str_replace( '#__', $db->getPrefix(), (string) $table_name );
 		return in_array( $table_name, $db->getTableList() );
+	}
+
+	/**
+	 * Returns the database driver; Factory::getDbo() was removed in Joomla 6
+	 *
+	 * @return  DatabaseInterface
+	 *
+	 * @since   5.0.4
+	 */
+	private function getDatabase() {
+		return Factory::getContainer()->get( DatabaseInterface::class );
+	}
+
+	/**
+	 * Creates an Installer instance with the database set; Joomla 6 no longer
+	 * falls back to Factory::getDbo() when the database is missing
+	 *
+	 * @return  Installer
+	 *
+	 * @since   5.0.4
+	 */
+	private function createInstaller() {
+		$installer = new Installer;
+
+		if ( method_exists( $installer, 'setDatabase' ) ) {
+			$installer->setDatabase( $this->getDatabase() );
+		}
+
+		return $installer;
 	}
 
 	/**

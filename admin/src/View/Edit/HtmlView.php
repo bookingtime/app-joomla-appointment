@@ -10,6 +10,7 @@ require_once(__DIR__ . '/../../../vendor/autoload.php');
 use Joomla\CMS\MVC\View\HtmlView as BaseHtmlView;
 use Joomla\CMS\Factory;
 use Joomla\CMS\Language\Text;
+use Joomla\CMS\Uri\Uri;
 use Bookingtime\Component\Appointment\Administrator\Helper\AppointmentHelper;
 
 
@@ -62,7 +63,7 @@ class HtmlView extends BaseHtmlView {
 
             //redirect
             $app = Factory::getApplication();
-            $app->redirect(\JURI::root() . 'administrator/index.php?option=com_appointment&view=listing');
+            $app->redirect(Uri::root() . 'administrator/index.php?option=com_appointment&view=listing');
             $app->close();
         }
 
@@ -85,7 +86,7 @@ class HtmlView extends BaseHtmlView {
                 $session->set('flashmessages',$messages);
                 //redirect
                 $app = Factory::getApplication();
-                $app->redirect(\JURI::root() . 'administrator/index.php?option=com_appointment&view=listing');
+                $app->redirect(Uri::root() . 'administrator/index.php?option=com_appointment&view=listing');
                 $app->close();
             }
 
@@ -103,7 +104,7 @@ class HtmlView extends BaseHtmlView {
 
             //redirect
             $app = Factory::getApplication();
-            $app->redirect(\JURI::root() . 'administrator/index.php?option=com_appointment&view=listing');
+            $app->redirect(Uri::root() . 'administrator/index.php?option=com_appointment&view=listing');
             $app->close();
         }
 

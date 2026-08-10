@@ -6,6 +6,7 @@ defined('_JEXEC') or die;
 
 use Joomla\CMS\MVC\View\HtmlView as BaseHtmlView;
 use Joomla\CMS\Factory;
+use Joomla\CMS\Uri\Uri;
 use Bookingtime\Component\Appointment\Administrator\Helper\AppointmentHelper;
 
 
@@ -33,7 +34,7 @@ class HtmlView extends BaseHtmlView {
         $bookingtimeurls = $appointmentHelper->findAll();
         if(count($bookingtimeurls) > 0) {
             $app = Factory::getApplication();
-            $app->redirect(\JURI::root() . 'administrator/index.php?option=com_appointment&view=listing');
+            $app->redirect(Uri::root() . 'administrator/index.php?option=com_appointment&view=listing');
             $app->close();
         }
 

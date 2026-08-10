@@ -21,15 +21,18 @@ class mod_appointmentInstallerScript
 {
 
 	/**
-	 * Extension script constructor.
+	 * The minimum Joomla! version required to install this extension
 	 *
-	 * @return  void
+	 * @var  string
 	 */
-	public function __construct()
-	{
-		$this->minimumJoomla = '4.0';
-		$this->minimumPhp = JOOMLA_MINIMUM_PHP;
-	}
+	protected $minimumJoomla = '4.0';
+
+	/**
+	 * The minimum PHP version required to install this extension
+	 *
+	 * @var  string
+	 */
+	protected $minimumPhp = '8.1';
 
 	/**
 	 * Method to install the extension

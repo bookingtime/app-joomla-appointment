@@ -1,6 +1,8 @@
 <?php
 defined('_JEXEC') or die('Restricted Access');
 
-$document = JFactory::getDocument();
+use Joomla\CMS\Factory;
+
+$document = Factory::getApplication()->getDocument();
 ?>
 </div>
